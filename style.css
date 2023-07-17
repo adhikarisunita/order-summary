@@ -1,0 +1,131 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    }
+    
+    
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 16px;
+        height: 100vh;
+        width: 100vw;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--pale-blue);
+        background-image: url("pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    
+    h2{
+        text-align: center;
+        color: var(--dark-blue);
+        font-weight: 900;
+        margin-bottom: 20px; 
+    }
+    
+    img{
+        width: 345px;
+        height: 168px;
+        margin-bottom: 20px;
+    
+    }
+  
+    
+    p{
+        text-align: center;
+        color: var(--desaturated-blue);
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+    }
+    button{
+        background-color: var(--bright-blue);
+        width: 280px;
+        margin-left: 25px;
+        margin-right: 25px;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+        font-weight: 700;
+        border-color: var(--bright-blue);
+        box-shadow: 0px 10px 8px var(--pale-blue);
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .container{
+        width: 325px;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0, 20px, 50px, -20px var(--desaturated-blue);
+    }
+    .price{
+        line-height: 1.5;
+        padding-top: 10px;
+    }
+    .pricing-info{
+        background-color: var(--very-pale-blue);
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
+        
+    }
+    .pricing-info img{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 8px;
+    }
+    .pricing-info p{
+        padding-top: 5px;
+    }
+    .change{
+    padding-top: 30px;
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--bright-blue);
+
+    }
+    .link{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .chnage:hover, .button>button:hover{
+        cursor: pointer;
+    }
+    .chnage:hover, .button>button:hover{
+        opacity: 0.7;
+        text-decoration: none;
+    }
+    .bold, .link>a:hover{
+        cursor: pointer; 
+        font-weight: 700;
+        color: var(--dark-blue);
+    }
+
+    @media screen and (min-width: 1140px){
+        body {
+            background-image: url("pattern-background-desktop.svg");
+            background-repeat: repeat-x;
+        }
+    }
+
+
+
+    
